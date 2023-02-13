@@ -30,6 +30,7 @@ struct Home: View {
                             // Flip Animation
                             Color.teal
                             Color.white
+                                .blur(radius: 75)
                                 .opacity(vm.moves[i] == nil ? 1 : 0)
                             // Player Indicator
                             Text(vm.moves[i]?.indicator ?? "")
